@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="ang.js"></script>
+    <link rel="stylesheet" type="text/css" href="sample.css"
+    <title></title>
+  </head>
+  <body ng-app="mymodule" ng-controller="mycontroller">
+    <form class="frame" >
+
+
+    <div>
+     <h1>choose dog or cat</h1>
+     <button ng-click="cat()" >cat</button>
+     <button ng-click="dog()">dog</button><br><br>
+
+
+     <img ng-src="show_{{situation}}.jpg" ><br><br>
+     enter name
+     <input type="text" name="name" ng-model="name"><br><br>
+     name is {{name}} <br><br>
+
+      <button ng-click="change()">change-name</button><br><br>
+      name is {{name}}<br><br></p>
+     to show uppercase ---->{{displaymsg()}} <br><br>
+    COST: {{calcost()| currency }}
+
+
+    </div>
+</form>
+  </body>
+</html>
